@@ -7,7 +7,7 @@ export const crossReference = async (emailFiles, excelFile) => {
   });
   formData.append('excel_file', excelFile, excelFile.name);
 
-  const response = await axios.post('https://outlook-api.replit.app/cross_reference/', formData, {
+  const response = await axios.post('https://outlook-backend-6ts5.onrender.com/cross_reference/', formData, {
     headers: {
       'Content-Type': 'multipart/form-data'
     }
