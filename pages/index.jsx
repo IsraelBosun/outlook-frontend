@@ -44,6 +44,7 @@ export default function Home() {
           <label className="block text-gray-700 font-bold mb-2">Email Files:</label>
           <input
             type="file"
+            accept=".msg"
             multiple
             onChange={handleEmailFilesChange}
             className="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-violet-50 file:text-violet-700 hover:file:bg-violet-100"
@@ -53,6 +54,7 @@ export default function Home() {
           <label className="block text-gray-700 font-bold mb-2">Excel File:</label>
           <input
             type="file"
+            accept=".xlsx"
             onChange={handleExcelFileChange}
             className="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-violet-50 file:text-violet-700 hover:file:bg-violet-100"
           />
